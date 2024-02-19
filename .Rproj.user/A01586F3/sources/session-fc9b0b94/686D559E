@@ -1,26 +1,26 @@
 {
-    "id": "7FDDE5A7",
+    "id": "686D559E",
     "path": "~/Documents/Mason/DataAnalyticsMasters/STAT515/km_website/_quarto.yml",
     "project_path": "_quarto.yml",
     "type": "yaml",
     "hash": "0",
     "contents": "",
     "dirty": false,
-    "created": 1707781194494.0,
+    "created": 1708150936913.0,
     "source_on_save": false,
-    "relative_order": 1,
+    "relative_order": 4,
     "properties": {
         "source_window_id": "",
         "Source": "Source",
-        "cursorPosition": "12,0",
+        "cursorPosition": "10,16",
         "scrollLine": "0"
     },
     "folds": "",
-    "lastKnownWriteTime": 1707781546,
+    "lastKnownWriteTime": 1708383065,
     "encoding": "UTF-8",
     "collab_server": "",
     "source_window": "",
-    "last_content_update": 1707781546862,
+    "last_content_update": 1708383065622,
     "read_only": false,
     "read_only_alternatives": []
 }

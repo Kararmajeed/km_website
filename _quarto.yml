@@ -3,17 +3,19 @@ project:
   output-dir: docs
 
 website:
-  title: "My Quarto Website"
+  title: "Karar's Quarto Website"
   navbar:
     left:
       - href: index.qmd
         text: Home
       - about.qmd
+      - page2.qmd
+      
 
 
 format:
   html:
-    theme: sketchy
+    theme: slate
     css: styles.css
     toc: true
 editor: visual

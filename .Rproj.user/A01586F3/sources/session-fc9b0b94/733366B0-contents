@@ -1,0 +1,17 @@
+library(tidyverse)
+
+euvax = read.csv("Datasets/EUvaccine")
+
+
+mapdata = map_data("world") %>% as_tibble()
+
+# only opening this package to get what is needed not all the maps package
+dat = maps::votes.repub
+head(dat)
+
+republican_voting_tbl <- maps::votes.repub %>%
+  as_tibble(rownames = "state") %>% # saving row names
+  select(state, "1976") %>% # selecting 1976 data
+  rename(repub_prop = "1976") %>% # renaming the column
+  mutate(repub_prop = repub_prop / 100) %>% # converting % to proportions
+  mutate(state = str_to_lower(state)) # to lower case

@@ -1,14 +1,14 @@
 {
-    "id": "4B765338",
+    "id": "C120F5D0",
     "path": "~/Documents/Mason/DataAnalyticsMasters/STAT515/km_website/about.qmd",
     "project_path": "about.qmd",
     "type": "quarto_markdown",
-    "hash": "2414954475",
+    "hash": "1426574926",
     "contents": "",
     "dirty": false,
-    "created": 1707781199754.0,
-    "source_on_save": false,
-    "relative_order": 3,
+    "created": 1708150900227.0,
+    "source_on_save": true,
+    "relative_order": 1,
     "properties": {
         "source_window_id": "",
         "Source": "Source",
@@ -18,14 +18,14 @@
         "rmdVisualWrapConfigured": "true",
         "docOutlineVisible": "1",
         "rmdVisualCollapsedChunks": "",
-        "rmdVisualModeLocation": "78:0"
+        "rmdVisualModeLocation": "216:0"
     },
     "folds": "",
-    "lastKnownWriteTime": 1707782311,
+    "lastKnownWriteTime": 1708383075,
     "encoding": "UTF-8",
     "collab_server": "",
     "source_window": "",
-    "last_content_update": 1707782311367,
+    "last_content_update": 1708383075970,
     "read_only": false,
     "read_only_alternatives": []
 }

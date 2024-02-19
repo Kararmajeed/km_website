@@ -1,16 +1,23 @@
 [
   {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "About",
+    "objectID": "page2.html",
+    "href": "page2.html",
+    "title": "placeholder",
     "section": "",
-    "text": "Hello my name is Karar Majeed this is a demo website"
+    "text": "&lt;placeholder&gt;"
   },
   {
     "objectID": "index.html",
     "href": "index.html",
     "title": "Home",
     "section": "",
-    "text": "This is a Quarto website.\nTo learn more about Quarto websites visit https://quarto.org/docs/websites.\n\n\n[1] 2"
+    "text": "This is my home page"
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "Hello my name is Karar Majeed I am a full time consultant at Deloitte and currently pursuing my masters degree in Data Analytics Engineering from George Mason University. I have an interest in data and visualization and looking forward to learning new skills, tools and practices."
   }
 ]

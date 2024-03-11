@@ -15,7 +15,6 @@ website:
       - text: "Home"
         file: index.qmd
       - about.qmd
-      - project.qmd
 
      #left:
     #  - href: index.qmd

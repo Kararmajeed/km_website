@@ -4,5 +4,3 @@ editor: visual
 execute: 
   echo: false
 ---
-
-This is my ...

@@ -1,23 +1,16 @@
 [
   {
-    "objectID": "page2.html",
-    "href": "page2.html",
-    "title": "placeholder",
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
     "section": "",
-    "text": "&lt;placeholder&gt;"
+    "text": "Hello my name is Karar Majeed I am a full time consultant at Deloitte and currently pursuing my masters degree in Data Analytics Engineering from George Mason University. I have an interest in data and visualization and looking forward to learning new skills, tools and practices. test"
   },
   {
     "objectID": "index.html",
     "href": "index.html",
     "title": "Home",
     "section": "",
-    "text": "This is my home page"
-  },
-  {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "About",
-    "section": "",
-    "text": "Hello my name is Karar Majeed I am a full time consultant at Deloitte and currently pursuing my masters degree in Data Analytics Engineering from George Mason University. I have an interest in data and visualization and looking forward to learning new skills, tools and practices."
+    "text": "This is my …"
   }
 ]

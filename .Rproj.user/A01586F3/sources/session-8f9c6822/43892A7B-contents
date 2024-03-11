@@ -1,21 +1,11 @@
----
-title: "STAT515 Project"
-editor: visual
-execute: 
-  echo: false
----
-
-# Project
-
-```{r message = FALSE}
-
 library(tidyverse)
 library(RColorBrewer)
+
 
 oil = read.csv("Oil_Production_Country_2022.csv")
 region = read.csv("Oil_by_Region_2022.csv")
 
-#str(region)
+str(region)
 
 region$X2022.Production.Thousand.B.D. <- as.numeric(region$X2022.Production.Thousand.B.D.)
 
@@ -28,9 +18,10 @@ ggplot(region, aes(y=X2022.Production.Thousand.B.D., x=Region, fill=Region))+
   labs(title = "Oil by Region",
      x = "Region",
      y = "Production in Thousands")  +
-    theme_classic() 
-     #geom_text(aes(label = X2022.Production.Thousand.B.D.), vjust = -0.3, size = 3.5, color = "black") 
+    theme_classic() +
+    geom_text(aes(label = X2022.Production.Thousand.B.D.), vjust = -0.3, size = 3.5, color = "black") 
   
+str(oil)
 
 
 oil$Country = as.factor(oil$Country)
@@ -42,17 +33,20 @@ oil <- oil %>% mutate(Country = fct_reorder(Country, X2022.Production, .desc = F
   labs(title = "Oil by Country",
          x = "Oil",
          y = "Production in Thousands") 
-
-
- oil = oil %>% mutate(perc_color = case_when(
+    # geom_label(
+    # label=rownames(oil), 
+    #  nudge_x = 0.25, nudge_y = 0.25, 
+    #  check_overlap = T)
+  
+  oil = oil %>% mutate(perc_color = case_when(
     YoY.Change >0 ~ "above",
     YoY.Change <= 0 ~ "below"))
   ggplot(oil, aes(x = YoY.Change, y = Country, colour=perc_color)) +
     geom_point() +
-    scale_color_manual(values = c("above" = "green", "below" = "red")) +
+    scale_color_manual(values = c("above" = "blue", "below" = "red")) +
     theme_minimal() +
     labs(title = "YoY Change by Country in 2022",
          x = "YoY Change",
          y = "Country") 
   
-```
+

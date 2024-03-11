@@ -1,0 +1,14 @@
+{
+  "hash": "a86e984e90b502b614fe081d045b1722",
+  "result": {
+    "markdown": "---\ntitle: \"Code\"\nexecute: \n  eval: false\n---\n\n\n# Project Code\n\n\n::: {.cell}\n\n```{.r .cell-code}\nlibrary(tidyverse)\nlibrary(RColorBrewer)\nlibrary(scales)\n\n\noil = read.csv(\"Oil_Production_Country_2022.csv\")\nregion = read.csv(\"Oil_by_Region_2022.csv\")\n\n\nregion$X2022.Production <- as.numeric(region$X2022.Production)\n\nregion <- region %>% mutate(Region = fct_reorder(Region, X2022.Production, .desc = TRUE))\n\nggplot(region, aes(y=X2022.Production, x=Region, fill=Region))+\n  geom_col()+ \n  scale_fill_brewer(palette = \"Set2\") +\n  labs(title = \"Oil by Region\",\n     x = \"Region\",\n     y = \"Production in Thousands\")  +\n   theme_classic() +\n    theme(legend.position = \"none\") +\n    #theme_minimal()+\n    geom_text(aes(label = X2022.Production), vjust = -0.3, size = 3.5, color = \"black\") \n```\n:::\n\n::: {.cell}\n\n```{.r .cell-code}\noil$Country = as.factor(oil$Country)\noil <- oil %>% mutate(Country = fct_reorder(Country, X2022.Production, .desc = FALSE))\n\n  ggplot(oil, aes(x=X2022.Production, y=Country))+\n  geom_col(color='grey') +\n  geom_text(aes(label = X2022.Production), hjust = -0.1, size = 2) +\n  theme_classic() +\n  labs(title = \"Oil by Country\",\n         x = \"Oil\",\n         y = \"Production in Thousands\") \n```\n:::\n\n::: {.cell}\n\n```{.r .cell-code}\n  oil = oil %>% mutate(perc_color = case_when(\n    YoY.Change >0 ~ \"above\",\n    YoY.Change <= 0 ~ \"below\"))\n  ggplot(oil, aes(x = YoY.Change, y = Country, colour=perc_color)) +\n    geom_point() +\n    scale_color_manual(values = c(\"above\" = \"blue\", \"below\" = \"red\")) +\n    scale_x_continuous(labels = percent, breaks = seq(min(oil$YoY.Change), .13, by = 0.025))+\n    theme_minimal() +\n    theme(legend.position = \"bottom\") +\n    labs(title = \"YoY Change by Country in 2022\",\n         x = \"YoY Change\",\n         y = \"Country\") \n```\n:::\n",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

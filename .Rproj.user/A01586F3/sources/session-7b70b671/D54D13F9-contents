@@ -1,14 +1,13 @@
 ---
-title: "Mid Project"
+title: "Code"
 execute: 
-  echo: false
+  eval: false
 ---
 
-# Chart 1 - Oil Breakdown by Region
+# Project Code
 
-This chart shows the production of oil by region in thousands barrels per day
+```{r}
 
-```{r message = FALSE}
 library(tidyverse)
 library(RColorBrewer)
 library(scales)
@@ -34,14 +33,7 @@ ggplot(region, aes(y=X2022.Production, x=Region, fill=Region))+
     geom_text(aes(label = X2022.Production), vjust = -0.3, size = 3.5, color = "black") 
   
 
-
-  
-
 ```
-
-# Chart 2 - Breakdown of Oil Producers by Country
-
-This chart presents the distribution of oil production in 2022, with the quantities measured in barrels per day. It highlights the United States as the top producer. The advantage of this graph is its ability to display the hierarchy of countries in terms of oil production.
 
 ```{r}
 
@@ -55,15 +47,9 @@ oil <- oil %>% mutate(Country = fct_reorder(Country, X2022.Production, .desc = F
   labs(title = "Oil by Country",
          x = "Oil",
          y = "Production in Thousands") 
-
-
 ```
 
-# Chart 3 - Year over Year change by Country
-
-This chart shows the year over year percent change with blue colors representing a positive percentage change and red showing a negative year over year change from the previous 2021 year.
-
-```{r message = FALSE}
+```{r}
   oil = oil %>% mutate(perc_color = case_when(
     YoY.Change >0 ~ "above",
     YoY.Change <= 0 ~ "below"))
@@ -78,11 +64,3 @@ This chart shows the year over year percent change with blue colors representing
          y = "Country") 
 
 ```
-
-# Video
-
-{{< video https://www.youtube.com/watch?v=RBul7IyX1u4 >}}
-
-# Reference
-
-Rao, Pallavi. “Ranked: The World’s Biggest Oil Producers.” *Elements by Visual Capitalist*, 23 Sept. 2023, elements.visualcapitalist.com/ranked-the-worlds-biggest-oil-producers/. 

@@ -16,6 +16,7 @@ website:
         file: index.qmd
       - about.qmd
       - midproject.qmd
+      - code.qmd
 
      #left:
     #  - href: index.qmd

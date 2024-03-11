@@ -1,10 +1,10 @@
 [
   {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "About",
+    "objectID": "midproject.html",
+    "href": "midproject.html",
+    "title": "Mid Project",
     "section": "",
-    "text": "Hello my name is Karar Majeed I am a full time consultant at Deloitte and currently pursuing my masters degree in Data Analytics Engineering from George Mason University. I have an interest in data and visualization and looking forward to learning new skills, tools and practices. test 2"
+    "text": "This is my mid project"
   },
   {
     "objectID": "index.html",
@@ -12,5 +12,12 @@
     "title": "Home",
     "section": "",
     "text": "This is my …"
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "Hello my name is Karar Majeed I am a full time consultant at Deloitte and currently pursuing my masters degree in Data Analytics Engineering from George Mason University. I have an interest in data and visualization and looking forward to learning new skills, tools and practices."
   }
 ]

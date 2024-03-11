@@ -7,7 +7,7 @@
     "contents": "",
     "dirty": false,
     "created": 1710123316683.0,
-    "source_on_save": true,
+    "source_on_save": false,
     "relative_order": 3,
     "properties": {
         "rmdVisualMode": "true",
@@ -16,7 +16,7 @@
         "Source": "Source",
         "docOutlineVisible": "1",
         "rmdVisualCollapsedChunks": "",
-        "rmdVisualModeLocation": "2:0",
+        "rmdVisualModeLocation": "62:0",
         "cursorPosition": "0,0",
         "scrollLine": "0"
     },

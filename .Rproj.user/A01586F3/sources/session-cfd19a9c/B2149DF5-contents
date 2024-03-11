@@ -1,11 +1,9 @@
 ---
-title: "STAT515 Project"
+title: "placeholder"
 editor: visual
 execute: 
   echo: false
 ---
-
-# Project
 
 ```{r message = FALSE}
 
@@ -15,7 +13,7 @@ library(RColorBrewer)
 oil = read.csv("Oil_Production_Country_2022.csv")
 region = read.csv("Oil_by_Region_2022.csv")
 
-#str(region)
+str(oil)
 
 region$X2022.Production.Thousand.B.D. <- as.numeric(region$X2022.Production.Thousand.B.D.)
 
@@ -56,3 +54,4 @@ oil <- oil %>% mutate(Country = fct_reorder(Country, X2022.Production, .desc = F
          y = "Country") 
   
 ```
+

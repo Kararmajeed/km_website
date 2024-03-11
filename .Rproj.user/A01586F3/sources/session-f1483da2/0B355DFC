@@ -3,16 +3,16 @@
     "path": "~/Documents/Mason/DataAnalyticsMasters/STAT515/km_website/_quarto.yml",
     "project_path": "_quarto.yml",
     "type": "yaml",
-    "hash": "290572352",
+    "hash": "0",
     "contents": "",
-    "dirty": false,
+    "dirty": true,
     "created": 1710008853423.0,
     "source_on_save": false,
     "relative_order": 1,
     "properties": {
         "source_window_id": "",
         "Source": "Source",
-        "cursorPosition": "13,4",
+        "cursorPosition": "13,5",
         "scrollLine": "0"
     },
     "folds": "",
@@ -20,7 +20,7 @@
     "encoding": "UTF-8",
     "collab_server": "",
     "source_window": "",
-    "last_content_update": 1710120963398,
+    "last_content_update": 1710121265435,
     "read_only": false,
     "read_only_alternatives": []
 }

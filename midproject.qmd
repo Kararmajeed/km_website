@@ -4,7 +4,9 @@ execute:
   echo: false
 ---
 
-This is my mid project
+# Chart 1 - Oil Breakdown by Region
+
+This chart shows the production of oil by region in thousands barrels per day
 
 ```{r message = FALSE}
 library(tidyverse)
@@ -22,13 +24,25 @@ region <- region %>% mutate(Region = fct_reorder(Region, X2022.Production, .desc
 ggplot(region, aes(y=X2022.Production, x=Region, fill=Region))+
   geom_col()+ 
   scale_fill_brewer(palette = "Set2") +
-  theme(legend.position = "bottom") +
   labs(title = "Oil by Region",
      x = "Region",
      y = "Production in Thousands")  +
-    theme_classic() +
+   theme_classic() +
+    theme(legend.position = "none") +
+    #theme_minimal()+
     geom_text(aes(label = X2022.Production), vjust = -0.3, size = 3.5, color = "black") 
   
+
+
+  
+
+```
+
+# Chart 2 - Breakdown of Oil Producers by Country
+
+This chart shows the breakdown of oil producers in 2022. The numbers are barrels per day and this chart shows that the united states is the leading producer. The benefit of this chart is that you are able to see the ranking of countries
+
+```{r}
 
 oil$Country = as.factor(oil$Country)
 oil <- oil %>% mutate(Country = fct_reorder(Country, X2022.Production, .desc = FALSE))
@@ -43,7 +57,14 @@ oil <- oil %>% mutate(Country = fct_reorder(Country, X2022.Production, .desc = F
     # label=rownames(oil), 
     #  nudge_x = 0.25, nudge_y = 0.25, 
     #  check_overlap = T)
-  
+
+```
+
+# Chart 3 - Year over Year change by Country
+
+This chart shows the year over year percent change with blue colors representing a positive percentage change and red showing a negative year over year change from the previous 2021 year.
+
+```{r}
   oil = oil %>% mutate(perc_color = case_when(
     YoY.Change >0 ~ "above",
     YoY.Change <= 0 ~ "below"))

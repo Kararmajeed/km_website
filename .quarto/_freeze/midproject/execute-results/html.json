@@ -1,7 +1,7 @@
 {
-  "hash": "c5032e0795540ac339deae80b3e009af",
+  "hash": "0e03eff886088da32ad50a977d311781",
   "result": {
-    "markdown": "---\ntitle: \"Mid Project\"\nexecute: \n  echo: false\n---\n\n\nThis is my mid project\n\n\n::: {.cell}\n::: {.cell-output-display}\n![](midproject_files/figure-html/unnamed-chunk-1-1.png){width=672}\n:::\n\n::: {.cell-output-display}\n![](midproject_files/figure-html/unnamed-chunk-1-2.png){width=672}\n:::\n\n::: {.cell-output-display}\n![](midproject_files/figure-html/unnamed-chunk-1-3.png){width=672}\n:::\n:::\n",
+    "markdown": "---\ntitle: \"Mid Project\"\nexecute: \n  echo: false\n---\n\n\n# Chart 1 - Oil Breakdown by Region\n\nThis chart shows the production of oil by region in thousands barrels per day\n\n\n::: {.cell}\n::: {.cell-output-display}\n![](midproject_files/figure-html/unnamed-chunk-1-1.png){width=672}\n:::\n:::\n\n\n# Chart 2 - Breakdown of Oil Producers by Country\n\nThis chart shows the breakdown of oil producers in 2022. The numbers are barrels per day and this chart shows that the united states is the leading producer. The benefit of this chart is that you are able to see the ranking of countries\n\n\n::: {.cell}\n::: {.cell-output-display}\n![](midproject_files/figure-html/unnamed-chunk-2-1.png){width=672}\n:::\n:::\n\n\n# Chart 3 - Year over Year change by Country\n\nThis chart shows the year over year percent change with blue colors representing a positive percentage change and red showing a negative year over year change from the previous 2021 year.\n\n\n::: {.cell}\n::: {.cell-output-display}\n![](midproject_files/figure-html/unnamed-chunk-3-1.png){width=672}\n:::\n:::\n",
     "supporting": [
       "midproject_files"
     ],

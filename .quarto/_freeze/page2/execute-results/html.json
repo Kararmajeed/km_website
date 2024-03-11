@@ -1,5 +1,5 @@
 {
-  "hash": "dd2d07069980df96aa53f66b1615cc1e",
+  "hash": "f6fe30b76e3ca10d369f9fddf2eec3fd",
   "result": {
     "markdown": "---\ntitle: \"STAT515 Project\"\neditor: visual\nexecute: \n  echo: false\n---\n\n\n# Project\n\n\n::: {.cell}\n::: {.cell-output-display}\n![](page2_files/figure-html/unnamed-chunk-1-1.png){width=672}\n:::\n\n::: {.cell-output-display}\n![](page2_files/figure-html/unnamed-chunk-1-2.png){width=672}\n:::\n\n::: {.cell-output-display}\n![](page2_files/figure-html/unnamed-chunk-1-3.png){width=672}\n:::\n:::\n",
     "supporting": [

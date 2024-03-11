@@ -3,7 +3,7 @@
     "path": "~/Documents/Mason/DataAnalyticsMasters/STAT515/km_website/midproject.qmd",
     "project_path": "midproject.qmd",
     "type": "quarto_markdown",
-    "hash": "215728474",
+    "hash": "2251571284",
     "contents": "",
     "dirty": false,
     "created": 1710126008685.0,
@@ -19,15 +19,15 @@
         "rmdVisualCollapsedChunks": "",
         "cursorPosition": "84,0",
         "scrollLine": "55",
-        "rmdVisualModeLocation": "2674:1293",
+        "rmdVisualModeLocation": "2562:1368.5",
         "docOutlineSize": "72"
     },
     "folds": "",
-    "lastKnownWriteTime": 1710177054,
+    "lastKnownWriteTime": 1710180431,
     "encoding": "UTF-8",
     "collab_server": "",
     "source_window": "",
-    "last_content_update": 1710177054037,
+    "last_content_update": 1710180431638,
     "read_only": false,
     "read_only_alternatives": []
 }

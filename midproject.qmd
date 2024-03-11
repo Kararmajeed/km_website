@@ -82,6 +82,10 @@ This chart shows the year over year percent change with blue colors representing
 
 ```
 
+# Video
+
+{{< video https://www.youtube.com/watch?v=RBul7IyX1u4 >}}
+
 # Reference
 
 Rao, Pallavi. “Ranked: The World’s Biggest Oil Producers.” *Elements by Visual Capitalist*, 23 Sept. 2023, elements.visualcapitalist.com/ranked-the-worlds-biggest-oil-producers/. 

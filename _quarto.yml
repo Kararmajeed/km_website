@@ -11,7 +11,7 @@ website:
       - text: "Home"
         file: index.qmd
       - about.qmd
-      - page2.qmd
+    #  - page2.qmd
     
      #left:
     #  - href: index.qmd

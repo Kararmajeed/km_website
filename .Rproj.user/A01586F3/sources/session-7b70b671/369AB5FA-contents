@@ -50,6 +50,7 @@ oil <- oil %>% mutate(Country = fct_reorder(Country, X2022.Production, .desc = F
 
   ggplot(oil, aes(x=X2022.Production, y=Country))+
   geom_col(color='grey') +
+  geom_text(aes(label = X2022.Production), hjust = -0.1, size = 2) +
   theme_classic() +
   labs(title = "Oil by Country",
          x = "Oil",
